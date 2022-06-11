@@ -1,0 +1,15 @@
+.app {
+  overflow: hidden;
+  color: $black;
+  background-color: $backgroundColor;
+  padding: 1rem 1rem;
+
+  &__blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: $blurBgColor;
+    filter: blur(72px);
+  }
+}
