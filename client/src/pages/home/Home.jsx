@@ -4,12 +4,8 @@ import { Posts, Profile } from '../../components';
 const Home = () => {
   return (
     <div className='home'>
-      <div className='home__profile'>
-        <Profile />
-      </div>
-      <div className='home__posts'>
-        <Posts />
-      </div>
+      <Profile />
+      <Posts />
       <div className='home__trending'>Trending</div>
     </div>
   );
