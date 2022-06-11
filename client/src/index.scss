@@ -4,8 +4,9 @@
 @import './styles/base/base';
 @import './styles//base/typography';
 
-@import './components/profile/profile';
+@import './app';
 
 @import './pages/home/home';
 
-@import './app';
+@import './components/logoSearch/logoSearch';
+@import './components/profile/profile';
