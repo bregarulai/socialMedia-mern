@@ -12,14 +12,14 @@ const FollowersCard = () => {
             <img
               src={follower.img}
               alt={follower.name}
-              className='followerCard__image'
+              className='followersCard__image'
             />
-            <div className='followerCard__name'>
+            <div className='followersCard__name'>
               <span>{follower.name}</span>
-              <span>{follower.username}</span>
+              <span>@{follower.username}</span>
             </div>
           </div>
-          <button>Follow</button>
+          <button className='app__button followersCard__button'>Follow</button>
         </div>
       ))}
     </div>

@@ -1,0 +1,47 @@
+.followersCard {
+    width: 100%;
+    border-radius: .7rem;
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: column;
+    font-size: $font-small;
+
+    &__follower {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    &__image {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        line-height: 1.1;
+
+        span {
+
+            &:nth-of-type(1) {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__button {
+        height: 2.4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
