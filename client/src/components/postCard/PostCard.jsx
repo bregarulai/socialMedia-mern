@@ -1,7 +1,29 @@
 import React from 'react';
 
+import commentImg from '../../img/comment.png';
+import shareImg from '../../img/share.png';
+import heartImg from '../../img/like.png';
+import notLikeImg from '../../img/notlike.png';
+
 const PostCard = ({ post }) => {
-  return <div className='postCard'>{post.desc}</div>;
+  const { img, name, desc, likes, liked } = post;
+  return (
+    <div className='postCard'>
+      <img src={img} alt={name} />
+      <div className='postCard__reactions'>
+        <img src={liked ? heartImg : notLikeImg} alt='not liked icon' />
+        <img src={commentImg} alt='comment icon' />
+        <img src={shareImg} alt='share icon' />
+      </div>
+      <span>{`${likes} likes`}</span>
+      <div className='postCard__details'>
+        <span>
+          <b>{name}</b>
+        </span>
+        <span>{` ${desc}`}</span>
+      </div>
+    </div>
+  );
 };
 
 export default PostCard;

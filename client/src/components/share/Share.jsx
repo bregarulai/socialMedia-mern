@@ -12,7 +12,7 @@ import profileImg from '../../img/profileImg.jpg';
 const Share = () => {
   const [image, setImage] = useState(null);
   const imageRef = useRef();
-  console.log(image);
+
   const onImageChange = (e) => {
     if (e.target.files && e.target.files[0]) {
       let img = e.target.files[0];
