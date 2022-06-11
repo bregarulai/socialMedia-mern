@@ -1,0 +1,65 @@
+.share {
+    display: flex;
+    gap: 1.4rem;
+    background-color: $cardColor;
+    padding: 1.4rem;
+    border-radius: 1rem;
+
+    img {
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 1.4rem;
+
+        input {
+            background-color: $inputColor;
+            border-radius: 1rem;
+            padding: 1rem;
+            border: none;
+            outline: none;
+            font-size: inherit;
+        }
+    }
+
+    &__options {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__option {
+        padding: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $font-small;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &--photo {
+            color: $photo;
+        }
+
+        &--video {
+            color: $video;
+        }
+
+        &--location {
+            color: $location;
+        }
+
+        &--schedule {
+            color: $schedule;
+        }
+    }
+}
