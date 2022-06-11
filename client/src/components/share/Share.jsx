@@ -31,6 +31,7 @@ const Share = () => {
             <UilSchedule />
             <span>Schedule</span>
           </div>
+          <button className='app__button share__button'>Share</button>
         </div>
       </div>
     </div>

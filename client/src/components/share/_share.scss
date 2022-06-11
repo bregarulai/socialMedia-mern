@@ -62,4 +62,9 @@
             color: $schedule;
         }
     }
+
+    &__button {
+        padding: .5rem 2rem;
+        font-size: $font-small;
+    }
 }
