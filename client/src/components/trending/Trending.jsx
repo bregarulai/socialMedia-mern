@@ -4,6 +4,7 @@ import homeIcon from '../../img/home.png';
 import notiIcon from '../../img/noti.png';
 import commentIcon from '../../img/comment.png';
 import { UilSetting } from '@iconscout/react-unicons';
+import { TrendingCard } from '..';
 
 const Trending = () => {
   return (
@@ -22,6 +23,7 @@ const Trending = () => {
           alt='comment nav icon'
         />
       </div>
+      <TrendingCard />
     </div>
   );
 };
