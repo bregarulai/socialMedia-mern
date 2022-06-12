@@ -24,6 +24,7 @@ const Trending = () => {
         />
       </div>
       <TrendingCard />
+      <button className='app__button trending__button'>Share</button>
     </div>
   );
 };
