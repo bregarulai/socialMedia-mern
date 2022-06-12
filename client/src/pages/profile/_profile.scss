@@ -1,1 +1,6 @@
-.profilePage {}
+.profilePage {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30rem auto 34rem;
+    gap: 1.4rem;
+}
