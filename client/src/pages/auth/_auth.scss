@@ -1,1 +1,45 @@
-.auth {}
+.auth {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 4.4rem;
+
+    &>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__leftSection {
+        gap: 2.4rem;
+    }
+
+    &__logo {
+        width: 4.4rem;
+        height: 4.4rem;
+    }
+
+    &__appName {
+
+        h1 {
+            font-size: $font-title;
+            background-color: red;
+
+            background-image: $buttonBg;
+            background-size: 100%;
+            background-repeat: repeat;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
+
+        h6 {
+            font-size: $font-extra-small;
+        }
+    }
+
+}
