@@ -1,1 +1,18 @@
-.trending {}
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    &__navIcons {
+        display: flex;
+        margin-top: 1.4rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navIcon {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+
+}
