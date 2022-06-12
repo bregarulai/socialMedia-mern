@@ -6,3 +6,4 @@ export { default as Posts } from './posts/Posts';
 export { default as Share } from './share/Share';
 export { default as Post } from './post/Post';
 export { default as PostCard } from './postCard/PostCard';
+export { default as Trending } from './trending/Trending';
