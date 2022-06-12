@@ -19,7 +19,7 @@ const PostCard = ({ post }) => {
         <img className='postCard__icon' src={commentImg} alt='comment icon' />
         <img className='postCard__icon' src={shareImg} alt='share icon' />
       </div>
-      <span>{`${likes} likes`}</span>
+      <span className='postCard__likes-text'>{`${likes} likes`}</span>
       <div className='postCard__details'>
         <span>
           <b>{name}</b>

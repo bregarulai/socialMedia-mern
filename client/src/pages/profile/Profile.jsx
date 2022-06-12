@@ -1,10 +1,14 @@
 import React from 'react';
-import { ProfileShare } from '../../components';
+import { Posts, ProfileCard, ProfileShare } from '../../components';
 
 const Profile = () => {
   return (
     <div className='profilePage'>
       <ProfileShare />
+      <div className='profilePage__center'>
+        <ProfileCard />
+        <Posts />
+      </div>
     </div>
   );
 };

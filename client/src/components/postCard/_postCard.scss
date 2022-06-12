@@ -22,4 +22,9 @@
     &__icon {
         width: auto;
     }
+
+    &__likes-text {
+        color: $gray;
+        font-size: $font-small;
+    }
 }
