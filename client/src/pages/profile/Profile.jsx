@@ -1,5 +1,5 @@
 import React from 'react';
-import { Posts, ProfileCard, ProfileShare } from '../../components';
+import { Posts, ProfileCard, ProfileShare, Trending } from '../../components';
 
 const Profile = () => {
   return (
@@ -9,6 +9,7 @@ const Profile = () => {
         <ProfileCard />
         <Posts />
       </div>
+      <Trending />
     </div>
   );
 };
