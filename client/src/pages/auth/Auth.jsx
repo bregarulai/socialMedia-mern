@@ -12,9 +12,101 @@ const Auth = () => {
           <h6>Explore the ideas throughout the world</h6>
         </div>
       </div>
-      <div className='auth__rightSection'>
-        <h1>Form</h1>
-      </div>
+
+      <LogIn />
+      {/* <SignUp /> */}
+    </div>
+  );
+};
+
+const LogIn = () => {
+  return (
+    <div className='auth__login'>
+      <form className='auth__form auth__form--signup'>
+        <h3>Log In</h3>
+
+        <div>
+          <input
+            type='text'
+            placeholder='User Name'
+            className='auth__input'
+            name='username'
+          />
+        </div>
+
+        <div>
+          <input
+            type='password'
+            className='auth__input'
+            placeholder='Password'
+            name='password'
+          />
+        </div>
+
+        <div>
+          <span className='auth__signupMsg'>
+            Don't have an account? Sign up!
+          </span>
+          <button className='app__button auth__button'>Login</button>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+const SignUp = () => {
+  return (
+    <div className='auth__signup'>
+      <form className='auth__form auth__form--signup'>
+        <h3>Sign up</h3>
+        <div>
+          <input
+            className='auth__input'
+            type='text'
+            placeholder='First Name'
+            name='firstname'
+          />
+          <input
+            className='auth__input'
+            type='text'
+            placeholder='Last Name'
+            name='lastname'
+          />
+        </div>
+        <div>
+          <input
+            type='text'
+            placeholder='User Name'
+            name='username'
+            className='auth__input'
+          />
+        </div>
+        <div>
+          <input
+            type='password'
+            placeholder='Password'
+            name='password'
+            className='auth__input'
+          />
+          <input
+            type='password'
+            placeholder='Confirm Password'
+            name='confirmPassword'
+            className='auth__input'
+          />
+        </div>
+        <div>
+          <span className='auth__signupMsg'>
+            Already have an account? Login!
+          </span>
+        </div>
+        <button
+          className='app__button auth__button auth__button--signup'
+          type='submit'
+        >
+          Signup
+        </button>
+      </form>
     </div>
   );
 };

@@ -42,4 +42,54 @@
         }
     }
 
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4rem;
+
+        &>div {
+            display: flex;
+            gap: 1.4rem;
+            height: 4.4rem;
+            width: 90%;
+        }
+
+        &--signup {
+            background-color: $cardColor;
+            border-radius: 1.4rem;
+            padding: 1.4rem;
+
+            &>div {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+        background-color: $inputColor;
+        border-radius: .8rem;
+        padding: 2rem;
+        flex: 1;
+    }
+
+    &__signupMsg {
+        font-size: $font-small;
+    }
+
+    &__button {
+        width: 8.4rem;
+        height: 3.4rem;
+
+        &--signup {
+            align-self: flex-end;
+
+        }
+    }
+
 }
