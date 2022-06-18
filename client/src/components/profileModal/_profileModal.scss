@@ -1,0 +1,33 @@
+.profileModal {
+    &__form {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4rem;
+
+        &>div {
+            display: flex;
+            gap: 1.4rem;
+            height: 4.4rem;
+            width: 90%;
+        }
+
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+        background-color: $inputColor;
+        border-radius: .8rem;
+        padding: 2rem;
+        flex: 1;
+    }
+
+    &__button {
+        width: 8.4rem;
+        height: 3.4rem;
+        align-self: flex-end;
+    }
+}

@@ -6,8 +6,8 @@ function App() {
       <div className='app__blur' style={{ top: '-3%', right: 0 }}></div>
       <div className='app__blur' style={{ top: '36%', left: '-5rem' }}></div>
       {/* <Home /> */}
-      {/* <Profile /> */}
-      <Auth />
+      <Profile />
+      {/* <Auth /> */}
     </div>
   );
 }
