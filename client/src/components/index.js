@@ -11,3 +11,4 @@ export { default as TrendingCard } from './trendingCard/TrendingCard';
 export { default as ProfileShare } from './profileShare/ProfileShare';
 export { default as InfoCard } from './infoCard/InfoCard';
 export { default as ProfileModal } from './profileModal/ProfileModal';
+export { default as ShareModal } from './shareModal/ShareModal';

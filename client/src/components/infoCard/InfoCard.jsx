@@ -15,12 +15,11 @@ const InfoCard = () => {
             height='1.6rem'
             onClick={() => setModalOpened(true)}
           />
-          {modalOpened && (
-            <ProfileModal
-              modalOpened={modalOpened}
-              setModalOpened={setModalOpened}
-            />
-          )}
+
+          <ProfileModal
+            modalOpened={modalOpened}
+            setModalOpened={setModalOpened}
+          />
         </div>
       </div>
       <div className='infoCard__info'>

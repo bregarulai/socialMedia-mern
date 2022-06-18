@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import homeIcon from '../../img/home.png';
 import notiIcon from '../../img/noti.png';
 import commentIcon from '../../img/comment.png';
 import { UilSetting } from '@iconscout/react-unicons';
-import { TrendingCard } from '..';
+import { TrendingCard, ShareModal } from '..';
 
 const Trending = () => {
+  const [modalOpened, setModalOpened] = useState(false);
   return (
     <div className='trending'>
       <div className='trending__navIcons'>
@@ -24,7 +25,14 @@ const Trending = () => {
         />
       </div>
       <TrendingCard />
-      <button className='app__button trending__button'>Share</button>
+      <button
+        onClick={() => setModalOpened(true)}
+        className='app__button trending__button'
+      >
+        Share
+      </button>
+
+      <ShareModal modalOpened={modalOpened} setModalOpened={setModalOpened} />
     </div>
   );
 };
