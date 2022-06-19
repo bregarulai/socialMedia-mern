@@ -18,7 +18,7 @@ export const registerUser = async (req, res) => {
 
   try {
     const savedUser = await newUser.save();
-    const { password, isAdmin, createdAt, updatedAt, __v, ...userInfo } =
+    const { password, createdAt, updatedAt, __v, isAdmin, ...userInfo } =
       savedUser._doc;
     res.status(201).json(userInfo);
   } catch (err) {
@@ -37,7 +37,7 @@ export const loginUser = async (req, res) => {
     if (user) {
       const isValid = await bcrypt.compare(password, user.password);
       if (isValid) {
-        const { password, isAdmin, createdAt, updatedAt, __v, ...userInfo } =
+        const { password, createdAt, updatedAt, isAdmin, __v, ...userInfo } =
           user._doc;
         res.status(200).json(userInfo);
       } else {
