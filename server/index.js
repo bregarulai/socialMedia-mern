@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 import authRoute from './routes/authRoute.js';
+import userRoute from './routes/userRoute.js';
 
 const app = express();
 app.use(bodyParser.json({ limit: '30mb', extended: true }));
@@ -24,3 +25,4 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use('/api/auth', authRoute);
+app.use('/api/user', userRoute);

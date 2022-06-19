@@ -2,6 +2,7 @@ import bcrypt from 'bcrypt';
 
 import User from '../models/UserModel.js';
 
+//Register User
 export const registerUser = async (req, res) => {
   const { username, password, firstname, lastname } = req.body;
 
@@ -26,6 +27,7 @@ export const registerUser = async (req, res) => {
   }
 };
 
+//Login user
 export const loginUser = async (req, res) => {
   const { username, password } = req.body;
 
@@ -39,7 +41,7 @@ export const loginUser = async (req, res) => {
           user._doc;
         res.status(200).json(userInfo);
       } else {
-        res.status(400).json({ message: 'Invalid credentials' });
+        res.status(401).json({ message: 'Invalid credentials' });
       }
     } else {
       res.status(404).json({ message: 'Invalid credentials' });
